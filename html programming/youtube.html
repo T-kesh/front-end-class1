@@ -20,17 +20,14 @@
             .f-image {
                 width: 300px; 
                 display: block;
-
-            } 
-            .s-image {
-                width: 300px;
+                margin-bottom: 8px;
             }
-        
-            .f-container {
+            .f-container,
+            .s-container {
                 display: inline-block;
                 margin: 15px;
                 vertical-align: top;
-                width: ;
+                width: 300px;
             } 
             .f-video-author-2,
             .f-video-author {
@@ -44,28 +41,28 @@
                 color: rgb(96, 96, 96);
                 margin-top: 4px;
             }
-            .f-video-title-2,
             .f-video-title {
                 margin: 0;
                 font-size: 14px;
                 font-family: 'Roboto', Arial;
                 font-weight: 500;
-                line-height: 19px;
+                line-height: 20px;
             }
-            
-            
-            .s-container {
-                
+            .channel-img-2 {
                 display: inline-block;
-                margin: 0px;
+                width: 36px;
                 vertical-align: top;
-            }  
+            }
             .channel-img {
                 display: inline-block;
                 width: 36px;
                 vertical-align: top;
             }
-            .author-img-2,
+            .author-img-2 {
+                width: 100%;
+                border-radius: 50%;
+
+            }
             .author-img {
                 width: 36px;
                 border-radius: 50%;
@@ -74,12 +71,7 @@
             .video-info {
                 display: inline-block;
                 width: calc(100% - 60px);
-                vertical-align: top;
-                
-            }
-            .container {
-                
-                
+                vertical-align: top;    
             }
             .img-container-2,
             .img-container{
@@ -87,8 +79,9 @@
         }  
         </style>
     </head>
+
     <body>
-        <input class="searchbox" type="text" placeholder="Search">
+        <input class="searchbox" type="text" name="Search" placeholder="Search">
         <div class="f-container">
 
             <div class="img-container">
@@ -96,10 +89,10 @@
             </div>
                     
            
-            <div class="container">
+            <div class="content-container">
 
                 <div class="channel-img">
-                     <img class="author-img" src="images/channel-1.jpeg">
+                     <img class="author-img" src="images/channel-1.jpeg" alt="Channel thumbnail">
                 </div>
 
                 <div class="video-info">  
@@ -119,18 +112,17 @@
         <div class="s-container">
 
             <div class="img-container-2">
-            <img class="s-image" src="images/thumbnail-2.webp" alt="Video thumbnail">
+                <img class="s-image" src="images/thumbnail-2.webp" alt="Video thumbnail">
             </div>
                     
-        <div class="f-container">
+            <div class="content-container-2">
 
-
-                <div class="channel-img">
-                     <img class="author-img" src="images/channel-2.jpeg">
+                <div class="channel-img-2">
+                     <img class="author-img-2" src="images/channel-2.jpeg" alt="Channel thumbnail">
                 </div>
 
                 <div class="video-info-2">  
-                    <p class="f-video-title-2">
+                    <p class="f-video-title">
                        Try Not To Laugh Challenge #9 
                     </p>
                     <p class="f-video-author-2">
@@ -139,12 +131,8 @@
                     <p class="f-video-views-2">
                         19M views &middot; 4 years ago
                     </p>
-                </div>
-               
-             
-              
+                </div> 
             </div>
-
         </div>
     </body>
 </html>
