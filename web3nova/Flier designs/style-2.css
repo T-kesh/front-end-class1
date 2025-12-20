@@ -1,0 +1,166 @@
+/* Reset & base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffcc33, #ff9f1c);
+    color: #4a2b00;
+}
+
+h1 span {
+    color: #8b3a00;
+    font-weight: 700;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 80px;
+}
+
+header img {
+    width: 60px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #4a2b00;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #7a3e00;
+}
+
+/* Auth buttons */
+header div {
+    display: flex;
+    gap: 15px;
+}
+
+header button {
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+header button:first-child {
+    background: #4a2b00;
+    color: #fff;
+    border: none;
+}
+
+header button:last-child {
+    background: transparent;
+    border: 2px solid #4a2b00;
+    color: #4a2b00;
+}
+
+header button:hover {
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+/* Left content */
+section > div:first-child {
+    max-width: 550px;
+}
+
+h1 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+h1 span {
+    display: block;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    color: #5c3b00;
+}
+
+/* CTA buttons */
+section div div {
+    display: flex;
+    gap: 20px;
+}
+
+section button {
+    padding: 14px 28px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+section button:first-child {
+    background: #4a2b00;
+    color: white;
+}
+
+section button:last-child {
+    background: transparent;
+    border: 2px solid #4a2b00;
+    color: #4a2b00;
+}
+
+section button:hover {
+    transform: translateY(-3px);
+}
+
+/* Hero Image */
+section > div:last-child img {
+    width: 420px;
+    max-width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    header {
+        padding: 25px 40px;
+    }
+
+    section {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 40px;
+        gap: 50px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    section div div {
+        justify-content: center;
+    }
+}
