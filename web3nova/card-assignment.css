@@ -58,3 +58,16 @@ img {
     margin-top: 10px;
     margin-bottom: 20px;
 }
+/* Tablet */
+@media (max-width: 900px) {
+  .main-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+}
