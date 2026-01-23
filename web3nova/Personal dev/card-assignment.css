@@ -58,6 +58,16 @@ img {
     margin-top: 10px;
     margin-bottom: 20px;
 }
+.dark-mode {
+    background-color: black;
+    transition: background-color 0.5s ease;
+}
+
+.card-active {
+    background-color: blue;
+    /* transition: all 0.5s ease; */
+}
+
 /* Tablet */
 @media (max-width: 900px) {
   .main-container {
